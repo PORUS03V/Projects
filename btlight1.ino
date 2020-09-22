@@ -1,4 +1,4 @@
-/*
+/* code by PORUS 
   LiquidCrystal Library - Hello World
 
   Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
