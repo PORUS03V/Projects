@@ -1,6 +1,6 @@
 /* code by PORUS 
-  LiquidCrystal Library - Hello World
-
+  LiquidCrystal Library - 
+  
   Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
   library works with all LCD displays that are compatible with the
   Hitachi HD44780 driver. There are many of them out there, and you
@@ -22,22 +22,9 @@
    10K resistor:
    ends to +5V and ground
    wiper to LCD VO pin (pin 3)
-
-  Library originally added 18 Apr 2008
-  by David A. Mellis
-  library modified 5 Jul 2009
-  by Limor Fried (http://www.ladyada.net)
-  example added 9 Jul 2009
-  by Tom Igoe
-  modified 22 Nov 2010
-  by Tom Igoe
-  modified 7 Nov 2016
-  by Arturo Guadalupi
-
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/LiquidCrystalHelloWorld
-
+connect input pin of relay to pin 10 
+connect ground of real to ground of arduino 
+connect vcc of realy to 5v pinof arduino 
 */
 
 int Incoming_value = 0;
