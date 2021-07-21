@@ -1,2 +1,2 @@
-this isthe first version of home automatio using esp 
+#this is the first version of home automation using esp 
 v2 and documentation are on its way
