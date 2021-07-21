@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Control Pannel</title>
+<link href="sheet.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--<div class="getinfo"><button onclick="myFunction()" type="fetch" class="fetch"> get info</button></div>-->
+	<div class="temptext">
+		<p class="digifont"> control panel </p>
+	</div>
+	
+<div class= "mybody">
+	<div class="container">
+        
+		
+        <div class="switch-holder">
+            <div class="switch-label">
+                <span>ELEMENT1</span>
+            </div>
+            <div class="switch-toggle">
+                <button onclick="myFunction()" type="fetch" class="fetch" id="11"> ON </button>
+				 <button onclick="myFunction()" type="fetch" class="fetch" id="10"> OFF </button>
+                <label for="ELEMENT1"></label>
+            </div>
+        </div>
+
+        <div class="switch-holder">
+            <div class="switch-label">
+                <span>ELEMENT2</span>
+            </div>
+            <div class="switch-toggle">
+                <button onclick="myFunction()" type="fetch" class="fetch" id="21"> ON </button>
+				 <button onclick="myFunction()" type="fetch" class="fetch" id="20"> OFF </button>
+                <label for="ELEMENT2"></label>
+            </div>
+        </div>
+
+        <div class="switch-holder">
+            <div class="switch-label">
+                <span>ELEMENT3</span>
+            </div>
+            <div class="switch-toggle">
+                <button onclick="myFunction()" type="fetch" class="fetch" id="31"> ON </button>
+				 <button onclick="myFunction()" type="fetch" class="fetch" id="30"> OFF </button>
+                <label for="ELEMENT3"></label>
+            </div>
+        </div>
+		<div class="switch-holder">
+            <div class="switch-label">
+                <span>ELEMENT4</span>
+            </div>
+            <div class="switch-toggle">
+                <button onclick="myFunction()" type="fetch" class="fetch" id="41"> ON </button>
+				 <button onclick="myFunction()" type="fetch" class="fetch" id="40"> OFF </button>
+                <label for="ELEMENT4"></label>
+			</div>
+	
+    </div>
+		</div>
+</div>
+	
+<script>         
+function myFunction() {                            
+            var p = $(this).attr('id'); 
+            $.get("http://192.168.0.100:80/", {                       
+            element: p},function(retdata, status){
+    alert("Data: " + retdata + "\nStatus: " + status);
+        });
+};
+    </script>
+	</body>
+</html>
